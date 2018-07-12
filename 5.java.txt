@@ -1,0 +1,14 @@
+public class ArregloCompaneros 
+{
+
+    public static void main(String args[]) 
+    {
+     double[] precios = new double[5];
+     String[] nombre = {"Alberto ", "Darwin ", "German ", "Carmen ", "Alejandro "};
+     String[] apellido = {"Oliva ", "Maradiaga ", "Medina ", "Avila ", "Diaz "};
+     String[] carrera = {"Electronica ", "Electronica ", "Computacion ", "Industrial ", "Computacion "};
+     String[] lugarTrabajo = {"Seaboard ", "SAR ", "Gildan ", "Bco. Occidente ", "Termisa "};
+          
+    }
+
+}

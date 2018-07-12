@@ -1,0 +1,29 @@
+public class Arreglo 
+{
+    public static void main(String args[]) 
+    {
+            String[] companeros = new String[10];
+        companeros[0] = "Juan Mendez";
+        companeros[1] = "Pedro Miranda";
+        companeros[2] = "Sergio Lainez";
+        companeros[3] = "Gaby Reyes";
+        companeros[4] = "Joel Rodriguez";
+        companeros[5] = "Fabian Reyes";
+        companeros[6] = "Jesus Gonzales";
+        companeros[7] = "Carlos Cruz";
+        companeros[8] = "Bryan Murillo";
+        companeros[9] = "Alejandro Mendez";
+
+        System.out.println("Nombre 1:" + companeros[0]);
+        System.out.println("Nombre 2:" + companeros[1]);
+        System.out.println("Nombre 3:" + companeros[2]);
+        System.out.println("Nombre 4:" + companeros[3]);
+        System.out.println("Nombre 5:" + companeros[4]);
+        System.out.println("Nombre 6:" + companeros[5]);
+        System.out.println("Nombre 7:" + companeros[6]);
+        System.out.println("Nombre 8:" + companeros[7]);
+        System.out.println("Nombre 9:" + companeros[8]);
+        System.out.println("Nombre 10:" + companeros[9]);
+    }
+
+}

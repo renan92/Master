@@ -1,0 +1,60 @@
+public class Program {
+public static void main(String arg[ ]) {   
+      Operaciones operaciones = new Operaciones(); 
+      operaciones.Saludo();                   
+      operaciones.parcial(90);
+      operaciones.suma();
+      operaciones.lista(5);
+      operaciones.metodocinco();
+                               }
+    
+    public static class Operaciones {
+  
+        public void Saludo() {
+           System.out.println("Soy el mejor programador");
+                             }
+   
+        public void parcial(int nota) {
+        if (nota >= 70){
+           System.out.println("Aprobado");
+        }else{
+           System.out.println("Reprobado");
+             }
+          } 
+          
+        public void suma() 
+        {
+           int num1=2;
+           int num2=3;
+           int sumas;
+           sumas=num1+num2;
+            System.out.println("Resultado de la suma es:" + sumas);
+          }
+          
+        public void lista(int limite) 
+        {
+            int cont = 1;
+            while(cont <= limite ) 
+            {
+                System.out.println(cont);
+                cont++;
+            
+            }
+        }
+        
+        public void metodocinco()
+        {
+            double num1=3.33;
+            double num2=6.47;
+            double num3=1.12;
+            double resta; 
+            double multiplicacion;
+            resta = num1 - num2 - num3;
+            multiplicacion = num1 * num2 * num3;
+            System.out.println("Resultado resta:"+ resta);
+            System.out.println("resultado multiplicacion:" + multiplicacion);
+        }
+            
+      }
+
+   }

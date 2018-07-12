@@ -1,0 +1,276 @@
+public class Herencia {
+
+    public static void main(String arg[]) {
+        // Asignatura 1 heredada desde la super clase Persona.
+
+        System.out.println("-> Persona 1");
+
+        // Instancia de la persona 1 Renan.
+
+        Renan m = new Renan();
+
+        // Imprimir la información de la persona 1.
+
+        m.imprimirInformacion();
+
+
+        // Persona 2 heredada desde la super clase Persona.
+
+        System.out.println("-> Persona 2");
+
+        // Instancia de la Persona Ariel.
+
+        Ariel ada = new Ariel();
+
+        // Imprimir la información de la Persona Ariel.
+
+        ada.imprimirInformacion();
+
+
+        // Persona 3 heredada desde la super clase Persona.
+
+        System.out.println("-> persona 3");
+
+        // Instancia de la Persona Delmis.
+
+        Delmis ii = new Delmis();
+
+        // Imprimir la información de la persona Delmis.
+
+        ii.imprimirInformacion();
+
+
+        // Persona 4 heredada desde la super clase Persona.
+
+        System.out.println("-> Persona 4");
+
+        // Instancia de la persona Jesus.
+
+        Jesus i = new Jesus();
+
+        // Imprimir la información de la persona jesus.
+
+        i.imprimirInformacion();
+    }
+
+
+    /*
+    Declaracion de la super clase Persona, donde se definen
+    los atributos de una persona en general y heredaran las subclases
+    de otras personas.
+    */
+
+    public static class Persona {
+
+        // Nombre de la persona.
+
+        private String nombre;
+
+        // edad de la persona.
+
+        private int edad;
+
+        // altura de la persona.
+
+        private double altura;
+
+        // sexo de la persona.
+
+        private String sexo;
+
+        // nacionalidad de la persona.
+
+        private String nacionalidad;
+
+
+        // Constructor predeterminado de la clase.
+
+        public Persona() {
+        }
+
+        /*
+        Constructor con sobrecarga para la
+        inicializacion de la persona.
+        */
+
+        public Persona(String nombre,
+                          int edad,
+                          double altura,
+                          String sexo,
+                          String nacionalidad) {
+            this.nombre = nombre;
+
+            this.edad = edad;
+
+            this.altura = altura;
+
+            this.sexo = sexo;
+
+            this.nacionalidad = nacionalidad;
+        }
+
+
+        /*
+        Declaracion de los getters y setters
+        de cada variable miembro de la clase.
+        */
+
+        public String getNombre() {
+            return this.nombre;
+        }
+
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+
+
+        public int getEdad() {
+            return this.edad;
+        }
+
+        public void setEdad(int edad) {
+            this.edad = edad;
+        }
+
+
+        public double getAltura() {
+            return this.altura;
+        }
+
+        public void setAltura(double altura) {
+            this.altura = altura;
+        }
+
+
+        public String getSexo() {
+            return this.sexo;
+        }
+
+        public void setSexo(String sexo) {
+            this.sexo = sexo;
+        }
+
+
+        public String getNacionalidad() {
+            return this.nacionalidad;
+        }
+
+        public void setNacionalidad(String nacionalidad) {
+            this.nacionalidad = nacionalidad;
+        }
+
+
+        /*
+        Metodo para imprimir la informacion
+        de la persona.
+        */
+
+        public void imprimirInformacion() {
+            System.out.println("");
+
+            System.out.println("Nombre: " + nombre);
+
+            System.out.println("Edad: " + edad);
+
+            System.out.println("Altura: " + altura);
+
+            System.out.println("Sexo: " + sexo);
+
+            System.out.println("Nacionalidad: " + nacionalidad);
+
+            System.out.println("");
+        }
+
+    }
+
+    
+    /*
+    Declaracion de la clase persona Renan que hereda todos los
+    atributos de la superclase Persona mediante: extends Persona
+    en su declaración.
+    */
+
+    public static class Renan extends Persona {
+
+        public Renan() {
+            /*
+            Inicializacion de la clase Renan mediante
+            los setters definidos en la superclase Persona, con
+            los valores de la persona: Renan.
+            */
+
+            setNombre("Renan Ariel Valladares Molina");
+
+            setEdad(26);
+
+            setAltura(1.69);
+
+            setSexo("Masculino");
+
+            setNacionalidad("Hondureña");
+        }
+
+
+    }
+
+
+    /*
+    Declaracion de la clase Ariel que hereda todos los
+    atributos de la superclase Persona mediante: extends Persona
+    en su declaración.
+    */
+
+    public static class Ariel extends Persona {
+
+        public Ariel() {
+            /*
+            Inicializacion de la clase Ariel
+            el constructor sobrecargado definido en la superclase Persona, con
+            los valores de la Persona: Ariel.
+            */
+
+            super("Ariel Jeovanni Ramos Reyes",24,1.57,"Masculino","Hondureña");
+        }
+
+    }
+
+
+    /*
+    Declaracion de la clase Delmis que hereda todos los
+    atributos de la superclase Persona mediante: extends Persona
+    en su declaración.
+    */
+
+    public static class Delmis extends Persona {
+
+        public Delmis() {
+            /*
+            Inicializacion de la clase Delmis mediante
+            los setters definidos en la superclase Persona, con
+            los valores de la Persona: Delmis.
+            */
+
+            super("Delmis Clementina Molina Sandoval", 51, 1.58, "Femenino", "Hondureña");
+
+    }
+
+    }
+    /*
+    Declaracion de la Jesus que hereda todos los
+    atributos de la superclase Persona mediante: extends Persona
+    en su declaración.
+    */
+
+    public static class Jesus extends Persona {
+
+        public Jesus() {
+            /*
+            Inicializacion de la clase Jesus mediante
+            el constructor sobrecargado definido en la superclase Persona, con
+            los valores de la persona: Jesus.
+            */
+
+            super("Jesus Renan Valladares Jimenez", 59, 1.68, "Masculino", "Hondureña");
+        }
+    }
+}
